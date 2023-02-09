@@ -65,11 +65,13 @@ namespace Calculator_OOP
                 return div1;
             }
         }
-        public void Display(double n1, double n2) //display the results of the operations
+        
+        public void Display() //display with the default values
         {
-            
-            Console.WriteLine("Your numbers are: {0} & {1}\n================Results================\n {0}+{1} = {2}\n {0}-{1} = {3}\n {0}*{1} = {4}\n {0}/{1} = {5}\n=======================================", n1, n2, Add(n1,n2), Sub(n1,n2), Mult(n1,n2), Div(n1,n2) );
-            Console.ReadKey ();
+
+            Console.WriteLine("Your numbers are: {0} & {1}\n================Results================\n {0}+{1} = {2}\n {0}-{1} = {3}\n {0}*{1} = {4}\n {0}/{1} = {5}\n=======================================", this.Number1,this.Number2, Add(this.Number1, this.Number2), Sub(this.Number1, this.Number2), Mult(this.Number1, this.Number2), Div(this.Number1, this.Number2));
+            Console.ReadKey();
+            return;
         }
 
 
@@ -79,8 +81,12 @@ namespace Calculator_OOP
     {
         static void Main(string[] args)
         {
-          label1:
-            Calc calc1 = new Calc(); //first obj with the defaut constructor
+        label1:
+
+            Calc calc1 = new Calc(); //first obj 
+            Console.WriteLine($"Default constructor using default values\nnumber1={calc1.Number1}, number2={calc1.Number2}");
+            calc1.Display(); //display the default values
+
             Console.WriteLine("For the first object enter with the values:\n");
           label2:
             Console.Write("Please enter the first number:");
@@ -107,8 +113,9 @@ namespace Calculator_OOP
             
             Console.WriteLine();
 
-            Console.WriteLine("Result using defaut constructor\n");
-            calc1.Display(calc1.Number1, calc1.Number2);
+            Console.WriteLine($"Result for the first object, using the arguments {calc1.Number1} and {calc1.Number2}\n");
+            
+            calc1.Display(); //display the first obj
 
             Console.WriteLine("\nFor the second object using the constructor with arguments 9 and 3\n");
             
@@ -116,7 +123,8 @@ namespace Calculator_OOP
             Console.WriteLine();
 
             Console.WriteLine("Result using constructor with 2 arguments\n");
-            calc2.Display(9,3);
+           
+            calc2.Display(); //display the second obj
             label4:
             Console.WriteLine("Do you want to continue doing calculations Y or N ?");
             string opt = Console.ReadLine();
