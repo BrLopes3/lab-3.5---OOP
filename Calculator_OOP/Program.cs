@@ -65,19 +65,13 @@ namespace Calculator_OOP
                 return div1;
             }
         }
-        public void Display1(double n1, double n2) //display the results of the operations
+        public void Display(double n1, double n2) //display the results of the operations
         {
-            Console.WriteLine("Result using defaut constructor\n");
+            
             Console.WriteLine("Your numbers are: {0} & {1}\n================Results================\n {0}+{1} = {2}\n {0}-{1} = {3}\n {0}*{1} = {4}\n {0}/{1} = {5}\n=======================================", n1, n2, Add(n1,n2), Sub(n1,n2), Mult(n1,n2), Div(n1,n2) );
             Console.ReadKey ();
         }
 
-        public void Display2(double n1, double n2) //display the results of the operations
-        {
-            Console.WriteLine("Result using constructor with 2 arguments\n");
-            Console.WriteLine("Your numbers are: {0} & {1}\n================Results================\n {0}+{1} = {2}\n {0}-{1} = {3}\n {0}*{1} = {4}\n {0}/{1} = {5}\n=======================================\n", n1, n2, Add(n1, n2), Sub(n1, n2), Mult(n1, n2), Div(n1, n2));
-            Console.ReadKey();
-        }
 
     }//end class Calc
 
@@ -113,13 +107,16 @@ namespace Calculator_OOP
             
             Console.WriteLine();
 
-            calc1.Display1(calc1.Number1, calc1.Number2);
+            Console.WriteLine("Result using defaut constructor\n");
+            calc1.Display(calc1.Number1, calc1.Number2);
 
             Console.WriteLine("\nFor the second object using the constructor with arguments 9 and 3\n");
             
             Calc calc2 = new Calc(9,3); //second obj using the constructor with 2 parameters (9 & 3)
             Console.WriteLine();
-            calc2.Display2(9,3);
+
+            Console.WriteLine("Result using constructor with 2 arguments\n");
+            calc2.Display(9,3);
             label4:
             Console.WriteLine("Do you want to continue doing calculations Y or N ?");
             string opt = Console.ReadLine();
