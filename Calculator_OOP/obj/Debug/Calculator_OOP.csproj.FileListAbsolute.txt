@@ -1,0 +1,8 @@
+C:\Users\brlop\source\repos\Calculator_OOP\Calculator_OOP\bin\Debug\Calculator_OOP.exe.config
+C:\Users\brlop\source\repos\Calculator_OOP\Calculator_OOP\bin\Debug\Calculator_OOP.exe
+C:\Users\brlop\source\repos\Calculator_OOP\Calculator_OOP\bin\Debug\Calculator_OOP.pdb
+C:\Users\brlop\source\repos\Calculator_OOP\Calculator_OOP\obj\Debug\Calculator_OOP.csproj.AssemblyReference.cache
+C:\Users\brlop\source\repos\Calculator_OOP\Calculator_OOP\obj\Debug\Calculator_OOP.csproj.SuggestedBindingRedirects.cache
+C:\Users\brlop\source\repos\Calculator_OOP\Calculator_OOP\obj\Debug\Calculator_OOP.csproj.CoreCompileInputs.cache
+C:\Users\brlop\source\repos\Calculator_OOP\Calculator_OOP\obj\Debug\Calculator_OOP.exe
+C:\Users\brlop\source\repos\Calculator_OOP\Calculator_OOP\obj\Debug\Calculator_OOP.pdb
